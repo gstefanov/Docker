@@ -1,4 +1,4 @@
-# Dockerizing MongoDB: Dockerfile for building MongoDB images
+# Dockerizing MongoDB: Dockerfile for building MongoDB v3.0 images
 # Based on ubuntu:latest, installs MongoDB following the instructions from:
 # http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
 
@@ -8,7 +8,7 @@ MAINTAINER Docker
 # Installation:
 # Import MongoDB public GPG key AND create a MongoDB list file
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-RUN echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.2 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+RUN echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.0.list
 # Update apt-get sources AND install MongoDB
 RUN apt-get update && apt-get install -y mongodb-org
 
