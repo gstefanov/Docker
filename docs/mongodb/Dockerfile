@@ -1,4 +1,4 @@
-# Dockerizing MongoDB: Dockerfile for building MongoDB v3 images
+# Dockerizing MongoDB: Dockerfile for building MongoDB v3.0 images
 # Based on ubuntu:latest, installs MongoDB following the instructions from:
 # http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
 
